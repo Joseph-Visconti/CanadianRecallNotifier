@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#acacac"
+    tools:context="com.example.visconti.canadianrecall.SearchRecallsActivity">
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:padding="20dp"
+        android:background="@drawable/selector_search_button"
+        android:text="Search!"/>
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/btnSearch"
+        android:layout_toStartOf="@id/btnSearch"
+        android:layout_alignBottom="@id/btnSearch"
+        android:layout_alignTop="@id/btnSearch"
+        android:inputType="text"
+        android:background="@drawable/selector_search_box"
+        android:padding="10dp"
+        android:hint="Ex. 'Peanuts'"/>
+
+    <Button
+        android:id="@+id/btnPageBackwards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/leftCenterPoint"
+        android:layout_alignEnd="@id/leftCenterPoint"
+        android:background="@drawable/selector_backwards_button"
+        android:enabled="false"
+        android:text="Back"/>
+
+    <Button
+        android:id="@+id/btnPageForwards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rightCenterPoint"
+        android:layout_alignStart="@id/rightCenterPoint"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_forwards_button"
+        android:enabled="false"
+        android:text="Next"/>
+
+    <TextView
+        android:id="@+id/txtPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnPageBackwards"
+        android:layout_toEndOf="@id/btnPageBackwards"
+        android:layout_toLeftOf="@id/btnPageForwards"
+        android:layout_toStartOf="@id/btnPageForwards"
+        android:layout_alignTop="@id/btnPageForwards"
+        android:gravity="center"
+        android:textColor="#acacac"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/shape_page_text"
+        android:text="Page"/>
+
+    <ListView
+        android:id="@+id/lstRecalls"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnSearch"
+        android:layout_above="@id/btnPageBackwards"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_list_view" />
+
+    <TextView
+        android:id="@+id/txtNumberResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/lstRecalls"
+        android:layout_alignEnd="@id/lstRecalls"
+        android:layout_alignTop="@id/lstRecalls"
+        android:textColor="#acacac"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Number Of Results"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:background="@drawable/shape_list_view" />
+
+</RelativeLayout>
