@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#acacac"
+    tools:context="com.example.visconti.canadianrecall.RecallDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_recall_details">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingTop="6dp"
+            android:textColor="#9F0000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="TITLE" />
+
+        <TextView
+            android:id="@+id/txtRecallID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/txtTitle"
+            android:paddingLeft="15dp"
+            android:textColor="#acacac"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="RECALL ID" />
+
+        <TextView
+            android:id="@+id/txtDatePublished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtTitle"
+            android:textColor="#acacac"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="DATE PUBLISHED" />
+
+        <TextView
+            android:id="@+id/txtStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtDatePublished"
+            android:textColor="#acacac"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="START DATE" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/txtRecallID"
+            android:paddingLeft="15dp"
+            android:textColor="#acacac"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="CATEGORY" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtMoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#590000"
+        android:textColorLink="#590000"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:text="@string/link_more_info" />
+
+    <ListView
+        android:id="@+id/lstPanels"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/topLayout"
+        android:layout_above="@id/txtMoreInfo"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_list_view" />
+
+</RelativeLayout>

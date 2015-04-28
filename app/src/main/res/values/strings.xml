@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CanadianRecall</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_view_recent_recalls">View Recent Recalls</string>
+    <string name="title_activity_search_recalls">Search Recalls</string>
+    <string name="title_activity_recall_details">Recall Details</string>
+    <string name="link_more_info"><u>Click Here For More Info!</u></string>
+
+    <string-array name="category_types">
+        <item>All</item>
+        <item>Food</item>
+        <item>Vehicles</item>
+        <item>Health</item>
+        <item>Consumer Products</item>
+    </string-array>
+</resources>
